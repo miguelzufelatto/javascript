@@ -7,7 +7,7 @@ function desconto() {
   }
   let preco = window.prompt(`Qual é o preço de ${produto}?`);
   let precoN = Number(preco);
-  if (precoN <= 0) {
+  if (precoN <= 0 || isNaN(precoN)) {
     window.alert("Por favor insira um preço válido");
     return;
   }
@@ -17,7 +17,9 @@ function desconto() {
     "pt-BR"
   )}</h2> <br>
     <p>O preço original era R$ ${precoN.toLocaleString("pt-BR")}</p>
-    <p>Voce acaba de ganhar R$ ${desconto.toLocaleString("pt-BR")} de desconto (-10%)</p>
+    <p>Voce acaba de ganhar R$ ${desconto.toLocaleString(
+      "pt-BR"
+    )} de desconto (-10%)</p>
     <p>No fim, voce vai pagar R$ ${novopreco.toLocaleString(
       "pt-BR"
     )} no produto ${produto.toLocaleString("pt-BR")}</p>`;
