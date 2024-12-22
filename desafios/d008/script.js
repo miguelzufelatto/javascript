@@ -6,6 +6,7 @@ function desconto() {
     return;
   }
   let preco = window.prompt(`Qual é o preço de ${produto}?`);
+  preco = preco.replace(",", ".");
   let precoN = Number(preco);
   if (precoN <= 0 || isNaN(precoN)) {
     window.alert("Por favor insira um preço válido");
@@ -14,13 +15,25 @@ function desconto() {
   let desconto = precoN * 0.1;
   let novopreco = precoN - desconto;
   res.innerHTML = `<h2>Calculando desconto de 10% para ${produto.toLocaleString(
-    "pt-BR"
+    "pt-BR",
+    {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }
   )}</h2> <br>
-    <p>O preço original era R$ ${precoN.toLocaleString("pt-BR")}</p>
-    <p>Voce acaba de ganhar R$ ${desconto.toLocaleString(
-      "pt-BR"
-    )} de desconto (-10%)</p>
-    <p>No fim, voce vai pagar R$ ${novopreco.toLocaleString(
-      "pt-BR"
-    )} no produto ${produto.toLocaleString("pt-BR")}</p>`;
+    <p>O preço original era R$ ${precoN.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })}</p>
+    <p>Voce acaba de ganhar R$ ${desconto.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })} de desconto (-10%)</p>
+    <p>No fim, voce vai pagar R$ ${novopreco.toLocaleString("pt-BR", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })} no produto ${produto.toLocaleString("pt-BR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })}</p>`;
 }
