@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ano Bissexto</title>
+    <style>
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      button {
+        width: 120px;
+        height: 50px;
+      }
+
+      .resetbutton {
+        width: 70px;
+        height: 30px;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+
+      div > p {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .bissexto {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(158, 255, 158, 0.493);
+        color: green;
+        font-weight: bold;
+      }
+
+      .naobissexto {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(253, 50, 50, 0.555);
+        color: rgb(139, 0, 0);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ano Bissexto</h1>
+    <button onclick="bissexto()">Verificar</button>
+    <p>Informe um ano para saber se ele é bissexto</p>
+    <div class="res" id="res"></div>
+    <button class="resetbutton" onclick="limpa()">Limpar</button>
+    <script src="script.js"></script>
+  </body>
+</html>

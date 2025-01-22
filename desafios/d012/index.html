@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preço Mudou</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      button {
+        width: 110px;
+        height: 50px;
+      }
+
+      .resetbutton {
+        width: 70px;
+        height: 30px;
+      }
+
+      p {
+        font-size: 19px;
+      }
+
+      .bissexto {
+        background-color: rgba(158, 255, 158, 0.493);
+        color: green;
+        font-weight: bold;
+      }
+
+      .naobissexto {
+        background-color: rgba(253, 50, 50, 0.555);
+        color: rgb(139, 0, 0);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Preço mudou</h1>
+    <button onclick="dadospreco()">Verificar</button>
+    <div class="res" id="res">
+      <p>Clique no botão acima para analisar a mudança de preço.</p>
+    </div>
+    <button class="resetbutton" onclick="limpa()">Limpar</button>
+    <script src="script.js"></script>
+  </body>
+</html>
