@@ -25,5 +25,5 @@ Este repositório contém minhas soluções para os desafios do curso básico de
 - [Preço antes, preço depois](desafios/d012/index.html)
 - [A situação de um aluno](desafios/d013/index.html)
 
-Explore os arquivos para ver as soluções implementadas para cada desafio.
-Para ver os desafios funcionando [CLIQUE AQUI](https://miguelzufelatto.github.io/javascript/)
+Explore os arquivos para ver as soluções implementadas para cada desafio. <br>
+### Para ver os desafios funcionando [CLIQUE AQUI](https://miguelzufelatto.github.io/javascript/)
