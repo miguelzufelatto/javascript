@@ -26,3 +26,4 @@ Este repositório contém minhas soluções para os desafios do curso básico de
 - [A situação de um aluno](desafios/d013/index.html)
 
 Explore os arquivos para ver as soluções implementadas para cada desafio.
+Para ver os desafios funcionando [CLIQUE AQUI](https://miguelzufelatto.github.io/javascript/)
