@@ -23,6 +23,7 @@ function limpa() {
   res.style.display = "none";
 }
 
+// CONDICIONAR A PAG FICAR SEM ROLAMENTO NO CELL P TALVEZ TROCAR A POSIÇÃO DO BOTÃO DE LIMPAR
 // if (res.innerHTML !== "") {
 //   alert("Por favor limpe o resultado antes de inserir outro valor.");
 //   return;
