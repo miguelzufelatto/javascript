@@ -3,6 +3,10 @@ function dadospreco() {
 
   const pant = window.prompt("Qual era o preço anterior do produto?");
   const pantN = Number(pant);
+  if (isNaN(pantN)) {
+    alert("Por favor digite um número.");
+    return;
+  }
 
   if (pantN < 0) {
     alert("Por favor digite um valor positivo.");
@@ -11,6 +15,11 @@ function dadospreco() {
 
   const patual = window.prompt("Qual era o preço atual do produto?");
   const patualN = Number(patual);
+
+  if (isNaN(patualN)) {
+    alert("Por favor digite um número.");
+    return;
+  }
 
   if (pantN === patualN) {
     alert(
